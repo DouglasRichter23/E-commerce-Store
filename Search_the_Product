@@ -4,20 +4,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 import time
 
 from selenium import webdriver
-E-commerce-Store
-
-Automation of E-commerce Store
-
-
-
 from selenium.webdriver.common.by import By
 #driver = webdriver.Chrome()
 driver = webdriver.Firefox()
 driver.implicitly_wait(10) # seconds
 driver.maximize_window()
+
 driver.get("https://www.tiptop.com.br")
 time.sleep(3)
-
 
 #to refresh the browser
 driver.refresh()
@@ -37,7 +31,7 @@ click_button = driver.find_element(By.ID, 'continuar-cookie').click()
 #Get the Cookie Button Text "Continuar e Fechar"
 btn_txt = driver.find_element(By.ID, 'continuar-cookie').text
 
-#Get the Cookie Button Text (element) "Continuar e Fechar" e and puts it on the screen..
+#Get the Cookie Button Text (element) "Continuar e Fechar" e and puts it on the screen.
 print(2,btn_txt)
 
 
