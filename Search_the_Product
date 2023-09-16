@@ -24,7 +24,6 @@ time.sleep(3)
 btn_txt = driver.find_element(By.XPATH,'//form/button').text
 print(1,btn_txt)
 
-
 #Close the Cookie (Click on Button "Continuar e Fechar")
 click_button = driver.find_element(By.ID, 'continuar-cookie').click()
 
